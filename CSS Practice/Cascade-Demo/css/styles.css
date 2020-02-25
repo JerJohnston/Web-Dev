@@ -1,0 +1,62 @@
+footer{
+    background: rgb(88, 97, 216);
+}
+
+footer,                
+footer a {
+    color: #fff;
+}
+
+/** use descendant selectors to be more precise: the following rule applies to any UL elements that are descendents of a <nav> **/
+
+nav ul{
+    background-color:#ddd;
+}
+
+/** we can specify any number of descendants; the rule applies to any li elements that are descendents of the ul elements
+    which themselves are descendents of the <nav> elements **/
+
+    nav ul li{
+        border-bottom: 1px solid darkred;
+        margin-bottom: 10px;
+        list-style: none;
+
+    }
+/** and so on... **/
+    nav ul li a{
+        color: lightslategray;
+    }
+/** because of specificity the fuschia color wont be read by the browser **/
+    a{
+        color: fuchsia;
+        text-transform: uppercase;
+    }
+
+/**
+Pseudo classes allow us to target elements in the specific states,
+positions, etc... In this case, we are targeting <a> elements in the
+hover state(i.e. when the mouse cursor hovers over the links).
+**/
+
+nav ul li a:hover{
+    color: rgb(3, 7, 53);
+    font-weight: bold;
+}
+
+/** 
+class selectors can be used to be more specific when selecting elements 
+and have more priority than simple element selectors
+
+- element Selector (hi, p, a, li) has a value of 1
+- descenedent selector (li a, nav ul li) has a value of 2(li + a = 2), value 3 respectively.
+- class selector (.row, .main-nav) will have a value of 10
+- class descendant selector (.row p, .main-nav li) value of 11
+- id selector (#hero-banner) has a value of 100, one reason why we try to stick to using class selectors
+
+**/
+
+ul.main-nav{
+    /** any class attributes that append to an element selector
+        will not have any spaces between them. **/
+    padding: 0;
+}
