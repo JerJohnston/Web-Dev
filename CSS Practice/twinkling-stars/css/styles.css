@@ -1,0 +1,70 @@
+/* user-defined styles here */
+/* ============================================================================================== 
+SED Innovations
+https://sed.am
+https://mkrtchyan.ga
+================================================================================================= */
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.one, .two, .three, .four, .five, .h2 {
+    color: #ffffff;
+    text-align: center;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+    background: #020024 url(../img/stars.png) repeat top center;
+    height: 100vh;
+    z-index:0;
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+   scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display:none;
+}
+
+.twinkle{
+  background:transparent url(../img/twinkling.png) repeat top center;
+  z-index:10;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+   scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
