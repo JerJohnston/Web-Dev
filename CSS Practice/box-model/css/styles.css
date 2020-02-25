@@ -1,0 +1,60 @@
+
+
+.tuna{
+    /** 
+    
+    long way of writing margins
+
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+
+     **/
+
+    /** combining margin values **/
+
+    margin: 100px 50px 100px 50px; /** top right bottom left **/
+    /**
+    margin: 100px 50px; top & bottom, right & left
+    margin: 100px 50px 150px; 100px top, 50px - left & right, 150 bottom
+    margin: 150px; all sides are the same
+
+    /**
+
+    - when using margin-left content gets pushed to the right
+    - when using margin-right content gets pushed to the left
+    - when using margin-top content gets pushed to the bottom
+    - when using margin-bottom content gets pushed to the top
+
+    - this will also apply for padding
+    **/
+
+    background-color: rgb(245, 146, 245);
+}
+
+.trout{
+    background-color: skyblue;
+    border: 3px solid #000
+
+    /** ^short hand example is listed above
+
+    border-width
+    border-style
+    border-color
+
+    **/
+}
+
+.salmon{
+    background-color: gray;
+    padding: 100px;
+}
+
+.tilapia{
+    background-color: rgb(255, 167, 36);
+    width: 450px;
+    margin: 30px;
+    padding: 30px;
+    border: 3px solid #000;
+}
