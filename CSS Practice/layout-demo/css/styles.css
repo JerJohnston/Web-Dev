@@ -1,0 +1,60 @@
+body {
+	background-color: white;
+}
+
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+/** TYPOGRAPHY **/
+
+h1, h2{
+	padding: 10px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: darkred;
+}
+
+/** LAYOUT **/
+
+nav{
+	margin-top: 48px;
+	background-color: lightblue;
+}
+
+header{
+	height: 450px; /** height should only be used in cases where there is no content and you are laying out 
+					a shapes if there is content do not use height, use padding and margins instead. **/
+	margin-top: 24px;
+	background-color: lightpink;
+}
+
+main {
+	height: 800px;
+	margin-top: 24px;
+	background-color: lightgreen;
+}
+
+/** margin-collapse occurs when two margins (usually top and bottom) are placed side by side (sibling elements).  
+The margin with the larger view will always be shown.  If they are of equal value then only one value will be shown.  **/
+
+main section{ 
+	border:2px solid black;
+	background-color: lightcoral;
+	height: 200px;
+	margin: 30px;
+	/** width = 960px (container size) - margin on both sides (30px * 2) - borders (left and right) (2px * 2) = 896px **/
+	width: 896px;
+}
+
+footer{
+	margin-top: 24px;
+	margin-bottom: 48px;
+	background-color: lightsteelblue;
+	height: 150px;
+}
