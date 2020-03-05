@@ -1,0 +1,30 @@
+body {
+	background:rgba(0, 0, 0, 0.01);
+	font-family:  Verdana , sans-serif;
+}
+
+/** in this particular case the "main" element is going to be the parent element or "flex container".
+inside the flex container there are flex-items which are also known as the immediate child of the parent
+element.**/
+
+main{
+    /**flex-container**/
+    display:flex;
+}
+
+main > div{
+    width: 200px;
+    height: 200px;
+}
+
+.blue-paint{
+    background-color: cornflowerblue;
+}
+
+.red-paint{
+    background-color: mediumvioletred;
+}
+
+.yellow-paint{
+    background-color: palegoldenrod;
+}

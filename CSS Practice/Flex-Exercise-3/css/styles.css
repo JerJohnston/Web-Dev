@@ -1,0 +1,52 @@
+body {
+	background-color: #fffff;
+	font-family: verdana, sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+h1{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	margin: 10px 0px 20px 0px;
+	
+}
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+.flex-container{
+	display:flex;
+	background-color: lightslategray; 
+	border: 2px solid black;
+}
+
+.col{
+	width: 301.333px; /* when there is a repeating decimal place always use the first three numbers */
+	height: 297px;
+	border: 2px solid black;
+	margin: 10px 0px 10px 10px;	
+}
+
+.col-1{
+	background-color: rgb(68, 96, 223);
+}
+
+.col-2{
+	background-color: rgb(250, 166, 11);
+}
+
+.col-3{
+	background-color: rgb(226, 224, 224);
+}

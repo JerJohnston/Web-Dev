@@ -1,0 +1,28 @@
+body {
+	background-color: #ffffff;
+}
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+.flex-container{
+	display:flex; /** displays the flex items side by side **/
+	background-color: lightgrey;
+}
+
+.col{
+	width: 450px;
+	height: 450px;
+	margin-left: 20px;
+}
+.col-1{
+	background-color: dimgray;	
+}
+
+.col-2{
+	background-color: orange;	
+}
