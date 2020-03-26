@@ -1,0 +1,47 @@
+body{
+    background-color:#fff;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+    font-size: 100%; /** base of 16px - browser default base font-size **/
+    line-height: 1.5;
+}
+
+.banner{
+    background-color: rgba(11,119,124,0.2);
+    /** background image only accepts one value **/
+    background-image: url(../img/header-transparent.png);
+    padding-left: 42px;
+    padding-bottom: 180px;
+}
+
+.banner > h1{
+    padding-top: 48px;
+    font-size: 74px;
+    color: #0b777b;
+    line-height: 1.4;
+    
+
+}
+
+.banner > p{
+    margin-left: 56px;
+    font-size: 42px;
+    margin-top: -6px;
+    color: #6facaf;
+
+}
+
+.bkgd-tiling-ex{
+    background: url(../img/post1-icon.gif) no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    width: 100%;
+    height: 500px;
+    
+   
+
+}
