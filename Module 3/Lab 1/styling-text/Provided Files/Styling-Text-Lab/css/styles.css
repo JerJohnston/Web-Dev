@@ -1,0 +1,69 @@
+body {
+	background-color: #f0efed;
+	color: #3e3e44;
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+ 
+h1{
+	font-size: 72px;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 700;
+	padding-top: 96px;
+
+}
+
+h2{
+	font-size: 36px;
+	font-family: 'Libre Baskerville', serif;
+	padding-top: 96px;
+}
+
+h3{
+	font-size: 24px;
+	color: #a89699;
+	font-family: 'Libre Baskerville', serif;
+	padding-bottom: 24px;
+}
+
+h4{
+	padding-bottom:24px;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 700;
+}
+p{
+	text-align: left;
+	padding-bottom: 12px;
+}
+
+footer{
+	padding-top: 96px;
+}
+footer > p{
+	text-align: center;
+	font-style: italic;
+}
+
+img{
+	padding: 24px 0;
+}
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+.byline{
+	color: #6e6e79;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+.intro{
+	font-size: 18px;
+	font-style: italic;
+	padding: 48px 0;
+}
