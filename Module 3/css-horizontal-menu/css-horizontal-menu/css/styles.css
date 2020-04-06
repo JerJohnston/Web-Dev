@@ -1,0 +1,119 @@
+body {
+	background-color: white;
+	font-size: 100%;
+	line-height: 1.5;
+	font-family: 'Raleway', sans-serif;
+	color: #f1f7f6;
+}
+ 
+.container {
+	margin:0 auto;
+	width:960px;
+}
+
+.visuallyhidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px; width: 1px;
+	margin: -1px; padding: 0; border: 0;
+}
+
+header{
+	background-color: #028568;
+}
+
+header .logo{
+	margin:12px;
+}
+
+/** Step 1 remove text decoration **/
+nav a{
+	text-decoration: none;
+	color: #f1f7f6;
+}
+
+/** step 2: Add text styling and spacing to li elements **/
+
+nav li{
+	font-size: 18px;
+	margin-right: 30px;
+	line-height: 75px;
+	
+}
+
+/** Step 3 layout li elements horizontally **/
+
+nav ul{
+	display: flex;
+}
+
+/** step 4 layout logo image and nav horizontally **/
+
+header{
+	display: flex;
+}
+
+/**step 5 position nav and add hover effects **/
+
+header nav {
+	margin-left: 206px;
+}
+
+header a:hover{
+	border-bottom: 2px solid #abddd5;
+}
+
+/** |****** BANNER ******| **/
+
+/** Left Column **/
+
+.banner{
+	background-image: url(../img/island-background.jpg);
+	font-size: 18px;
+	display: flex;
+}
+.banner h2{
+	font-family: 'Alegreya', serif;
+	font-size: 36px;
+	margin-bottom: 35px;
+}
+
+.banner .left-col{
+	padding: 84px 82px 0px 82px;
+	width: 414px;
+	text-align: center;
+}
+
+.banner .bar {
+	width: 413px;
+	height: 7px;
+	background-color: #abddd5;
+	margin-bottom: 35px;
+}
+
+/** right column **/
+.banner .right-col{
+	width: 218px;
+	padding: 84px 83px 0 83px;
+	background-color: rgba(171, 221, 213, 0.8);
+}
+.banner .right-col h2 {
+	line-height: 44px;
+}
+
+.banner a{
+	text-decoration: none;
+	color: #028568;
+	background-color: #fff;
+	display:inline-block;
+	padding: 9px 38px;
+	border-radius: 4px;
+	margin-bottom: 65px;
+}
+
+.banner a:hover{
+	padding: 9px 33px 9px 43px;
+}
+/* font-family: 'Alegreya', serif;   
+   font-family: 'Raleway', sans-serif; */

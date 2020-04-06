@@ -1,0 +1,50 @@
+body {
+	background: #fff url(../img/bg-tile.png);
+	font-family: 'Raleway', sans-serif;
+}
+
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+header{
+	background: #fff;
+	border-bottom: 1px solid #959372;
+
+}
+
+header > a > img{
+	margin: 16px 16px 11px;
+}
+
+.banner{
+	margin-top: 53px;
+	padding: 50px 0px 130px 680px;
+	background: url(../img/bg-flower-img.jpg);
+}
+
+.banner > h1{
+	font-family: 'Alegreya', serif;
+	font-size: 36px;
+	color: #f9ea4f;
+}
+
+.banner li{
+	line-height: 40px;
+}
+
+.banner a{
+	font-size: 18px;
+	text-decoration: none;
+	color: #faf9f8;
+	transition: color 0.5s ease-in-out;
+}
+
+/** :hover psuedo-class adds styles only when we mouse over the link **/
+
+.banner a:hover{
+	color: #f9ea4f;
+}
