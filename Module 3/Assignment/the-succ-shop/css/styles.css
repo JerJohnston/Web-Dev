@@ -12,9 +12,10 @@ body {
 
 .flex-container{
 	display: flex;
+	flex-wrap: wrap;
 }
 
-/** Nav Styling **/
+/** Begin Nav Styling **/
 
 nav{
 	background: #533b4d;
@@ -41,15 +42,20 @@ nav > ul > li > a{
 	font-size: 30px;
 	font-weight: 200;
 	margin: 20px;
+	transition: border 1s ease-in;
 }
 
-nav a:hover{
-	border-bottom: 2px solid #fff;
-	padding: 0 5px;
-	
+a:hover{
+	text-decoration: underline;
 }
 
-/** Banner Styling **/
+
+/** Begin Banner Styling **/
+
+main a:hover{	
+		text-decoration: underline;
+	}
+
 
 h1{
 	font-size: 60px;
@@ -91,3 +97,179 @@ section p{
 	text-decoration: underline;
 	text-underline-position: below;
 }
+
+/** Begin About Us Section Styling **/
+
+h2{
+	font-size: 72px;
+	font-family: 'Playfair Display', serif;
+	color: #1d0502;
+	margin-top: 100px;
+	padding-left: 135px;
+}
+
+.row-1-col-1{
+	margin: 150px 20px 0 20px;
+	width: 380px;
+}
+
+.row-1-col-2 > p{
+	font-size: 17px;
+	font-weight: 400;
+	color: #1d0502;
+	line-height: 1.15;
+	margin: 15px;
+	padding: 0;
+	width: 502px;
+}
+
+sub{
+	font-size: 14px;
+	padding-left: 15px;
+	padding-top: 20px;
+	display: inline-block;
+}
+
+/** Begin Cactus Care Guide Styling **/
+
+/** Banner **/ 
+
+.care-banner{
+	margin-top: 130px;
+	color: #fff;
+}
+
+.care-banner h2{
+	margin: -165px 0 -150px 125px;
+}
+
+h2 span{
+	font-size: 48px;
+	background-color: #fff;
+}
+
+/** Care Articles **/
+
+h3{
+	font-size: 36px;
+	font-family: 'Playfair Display', serif;
+	margin: 45px;
+}
+
+.care-section{
+	padding-top: 240px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.15;
+
+}
+
+
+.row-2-col-1, .row-2-col-2, .row-3-col-2{
+	background-color: #9b4037;
+	width: 480px;
+	height: 500px;
+}
+
+.row-2-col-1 p, .row-3-col-2 p{
+	font-size: 16px;
+	margin: 0 45px 30px 45px;
+	padding: 0;
+}
+
+.care-section a{
+	color: #fff;
+	font-size: 24px;
+	text-decoration: none;
+	margin-left: 45px;
+	margin-top: 30px;
+	display: inline-block;
+	
+}
+
+.bar{
+	width: 880px;
+	height: 1px;
+	border-bottom: 1px solid black;
+	margin: 82.5px 40px;
+}
+
+/** End of Main Section **/
+
+/** Footer Styling **/
+
+footer{
+	font-weight: 300;
+	line-height: 1.15;
+}
+
+.Logo{
+	margin-left: 440px;
+}
+
+.Logo p{
+	margin-left: -20px;
+	color: #19211f;
+	font-size: 24px;
+}
+
+.flex{
+	display: flex;
+}
+
+h4{
+	font-size: 24px;
+	font-weight: 500;
+	margin: 60px 0 0 120px;
+}
+
+.about-nav h4{
+	margin-left: 85px;
+}
+
+.footer-nav{
+	background-color: #fff;
+	display: inline-block;
+	
+}
+
+.footer-nav ul{
+	text-align: center;
+	display: inline-block;
+	margin-left: 20px;
+}
+.footer-nav a{
+	color: #19211f;
+	font-size: 24px;
+	
+}
+
+.about-nav{
+	margin-left: 60px;
+}
+
+.contact-info{
+	width: 280px;
+	text-align: center;
+	display: inline-block;
+}
+
+.contact-info h4{
+	margin-right: 35px;
+}
+
+.contact-info p{
+	color: #19211f;
+	font-size: 24px;	
+	margin: 35px 0 0 80px;	
+}
+
+.copy{
+	margin:100px 0 30px 430px;
+}
+
+footer p{
+	margin: 0 0 40px 30px;
+}
+
+
