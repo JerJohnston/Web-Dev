@@ -443,8 +443,8 @@ As javascriptcode is often several lines long, it is more common to see event at
 
 **************************************** ----- Strings ----- ****************************************
 
-Strings are used for storing and manipulating text, they are created by placing 0 or more characters inside
-either single or double quotes.
+Strings are used for storing and manipulating text, they are created by placing 0 or more characters 
+inside either single or double quotes.
 
 "This is a string."
 
@@ -575,5 +575,355 @@ result = Banana
 If a parameter is negative the position is counted from the end of the string. 
 If a paramter is omitted the method will slice out the rest of the string. 
 
+The substring() method is similar to the slice() method however the substring() method cannot accept
+negative values:
 
+<script>
+    var str, res;
+
+    str = "Apple, Banana, Kiwi";
+    res = str.substring(7,13);
+    document.getElementById("demo").innerHTML = res;
+</script>
+
+with the substr() method the second paramter specifies the length of the extracted part:
+
+<p id="demo"></p>
+
+<string>
+    var str, res;
+
+    str = "Apple, Banana, Kiwi";
+    res = str.substr(7,6);
+    document.getElementById("demo").innerHTML = res;
+</string>
+
+just as the slice() method, if you omit the second paramter the method will slice out 
+the rest of the string.
+
+replace() replaces a specified value with another value in a string. By default, it will
+only replace the first instance of the match. 
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+            var str, txt;
+
+            str = document.getElementById("demo").innerHTML;
+            txt = str.replace("Microsoft","W3Schools");
+            document.getElementById("demo").innerHTML = txt;
+    }
+</script>
+
+To replace case insensitive, use a regular expression with an /i flag (insensitive).
+/g will replace all matches (global match).
+
+toUpperCase() will convert a string to upper case
+toLowerCase() will convert a string to lower case
+
+concat() joins two or more strings together and can be used instead of the + operator:
+
+var text1, text2, text3
+
+text1 = "Hello"
+text2 = "World"
+text3 = text1.concat(" ", text2);
+
+all string methods return a new string and do not modify the original string, strings are 
+immutable meaning they cannot be changed, only replaced. 
+
+the trim() method removes the white space from both sides of a string <-- not supported in IE 8 or lower 
+
+To extract String Characters you could use three different methods
+
+- charAt(position)
+- charCodeAt(position)
+- property access [ ]
+
+the charAt() method returns the character at a specified index in a string:
+
+var str = "HELLO WORLD";
+str.charAt(0); <-- returns h
+
+The charCodeAt() method returns the unicode of the character at a specified index in a string.
+This method returns a UTF-16 code (an integer between 0 and 65535).
+
+var str = "HELLO WORLD";
+str.charCodeAt(0); <-- returns 72
+
+ES5 allows property access [ ] on strings:
+
+var str = "Hello World";
+str[0]; <-- Returns H
+
+The Property access is a little unpredictable
+
+    - does not work with IE7 or earlier
+    - makes strings look like arrays
+    - if no character is found [] returns undefined
+    - It is read only. 
+
+To convert a String into an Array you could use the split() method
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+            var str, arr;
+            str = "a,b,c,d,e,f";
+            arr = str.split(",");
+            document.getElementById("demo").innerHTML = arr[0];
+    }
+</script>
+
+if the seperator is omitted, the returned array will contain the whole string in index [0]
+if the seperator is "", the returned array will be an array of single characters.
  */
+
+ /*
+
+ **************************************** ----- Numbers ----- ****************************************
+
+Javascript only has one type of number (floats are not used in javascript) and they can be written
+with or without decimals. 
+
+var x = 3;
+var x = 3.14;
+
+Extra large or extra small numbers can be written with scientific notation.  
+
+var x = 123e5;
+var x = 123e-5;
+
+Javascript numbers are ALWAYS 64 bit floating point, javascript does not define different types of numbers
+like integers, short, long, floating-point etc. They are always stored as double precision floating point
+numbers following the IEEE 754 standard.  
+
+This format stores numbers in 64 bits where the number (fraction) is stored in bits 0 to 51, the exponent 
+in bits 52 to 62 and the sign in bit 63:
+
+Value (aka Fraction/Mantissa)           Exponent                Sign
+
+52 bits (0 - 51)                        11 Bits (52 - 62)       1 bit (63)
+
+Integers are accurate up to 15 digits
+
+var x = 999999999999999;  <-- x will be 999999999999999
+var y + 9999999999999999; <-- y will be 10000000000000000
+
+the maximum number of decimals is 17 but floating point arithmetic is not always 100% accurate
+
+var x = 0.2 + 0.1; <-- x will be 0.30000000000000004
+
+to solve the problem, it helps to multiply and divie
+
+var x = (0.2 * 10 + 0.1 * 10) / 10; <-- x will be 0.3
+
+Javascript uses the + operator for both addition and concatenation, numbers are added while strings
+are concatenated. 
+
+var x = 10;
+var y = 20;
+var z = x + y;  <-- z will equal the number 30
+
+if you add two strings the result will be a string concatenation
+
+var x = "10";
+var y = "20";
+var z = x + y;  <-- the result will be "1020"
+
+adding a number and a string will result in a string concatenation
+
+var x = 10;
+var y = "20";
+var z = x + y;  <-- the result will be "1020"
+
+The Javascript strings can have numeric content, it will try to convert strings to numbers in all numeric
+operations save for the + operator. 
+
+NaN is a Javascript reserved word to indicate that a number is not a legal number.  Trying to do arithmetic
+with a non numeric string will result in NaN (Not a Number)
+
+you can use the global Javascript function isNaN() to find out if a value is a number. NaN is considered a
+number in Javascript, typeof NaN returns number. 
+
+Infinity or -Infinity is the value Javascript will return if you calculate a number outside the largest 
+possible number. 
+
+<p id="demo"></p>
+
+<script>
+    var myNumber = 2, txt;
+
+    txt = "";
+    while (myNumber != Infinity) {
+            myNumber = myNumber * myNumber;
+            txt = txt + myNumber + "<br>";
+    }
+
+    document.getElementById("demo").innerHTML = txt;
+
+</script>
+
+the above script will return:
+
+4
+16
+256
+65536
+4294967296
+18446744073709552000
+3.402823669209385e+38
+1.157920892373162e+77
+1.3407807929942597e+154
+Infinity
+
+Division by 0 will also generate infinity
+
+like NaN, Infinity is also considered a number in Javascript.
+
+Javascript interprets numeric constants as hexadecimal if they are preced by 0x
+
+var x = 0xFF; <-- x will be 255
+
+Javascript displays numbers as base 10 decimals but you can use the toString() method to output numbers from 
+base 2 to base 36.
+
+var myNumber = 32;
+myNumber.toString(10);  // returns 32
+myNumber.toString(32);  // returns 10
+myNumber.toString(16);  // returns 20
+myNumber.toString(8);   // returns 40
+myNumber.toString(2);   // returns 100000
+
+Numbers can also be objects but it is strongly recommended that you DO NOT USE NUMBERS AS OBJECTS!!!!
+
+when using the == operator numbers are equal however when using the === operator numbers are not 
+equal because the === operator expects equality in both type and value. 
+
+Just as with strings, numbers are treated as objects when executing methods and properties in Javascript. 
+
+Number Methods and Properties.
+
+All number methods can be used on ANY type of number (literals, variables or expressions)
+
+toString() - Returns a number as a string:
+
+<p id="demo"></p>
+
+<script>
+    var x = 123;
+    document.getElementById("demo").innerHTML = 
+       x.toString() + "<br>" 
+          (123).toString() + "<br>" +
+          (100 + 23).toString();
+</script>  
+
+result converts all numbers to strings 123
+
+toExponential() method - returns a string with a number rounded and written using exponential notation. A
+parameter defines the number of characters behind the decimal point:
+
+var x = 9.656;
+x.toExponential(2);  <-- returns 9.66e+0
+x.toExponential(4);  <-- returns 9.6560e+0
+x.toExponential(6);  <-- returns 9.656000e+0
+
+the paramter is optional, if you do not specify a paramter Javascript will not round the number. 
+
+toFixed() - returns a string with the number written with a specified number of decimals:
+
+var x = 9.656;
+
+x.toFixed(0);  <-- returns 10
+x.toFixed(2);  <-- returns 9.66 (Perfect for working with money)
+x.toFixed(4);  <-- returns 9.6560
+x.toFixed(6);  <-- returns 9.656000
+
+toPrecision() method returns a string with a number written with a specified length:
+
+var x = 9.656;
+
+x.toPrecision();   <-- returns 9.656
+x.toPrecision(2);  <-- returns 9.7
+x.toPrecision(4);  <-- returns 9.656
+x.toPrecision(6);  <-- returns 9.65600
+
+valueOf() - returns a number as a number
+
+var x = 123;
+
+x.valueOf();          <-- returns 123 from variable x
+(123).valueOf();      <-- returns 123 from literal 123
+(100 + 23).valueOf(): <-- returns 123 from the expression 100 + 23
+
+in Javascript a number can be a primitive value (typeof = number) or an object (typeof = object).
+
+the valueOf() method is used internally in javascript to conver number objects to primitive values, 
+there is no reason to use it in your code. 
+
+There are 3 JavaScript methods that can be used to convert variables to numbers:
+
+    - The Number() method      <-- Returns a number converted from its argument.
+    - The parseInt() method    <-- Parses its argument and returns a floating point number
+    - the parseFloat() method  <-- Parses its argument and returns an integer
+
+these are not number methods, they are global JavaScript methods. 
+
+Number() examples:
+
+Number(true);    <-- returns 1
+Number(false);   <-- returns 0
+Number("10");    <-- returns 10 
+Number(" 10 ");  <-- returns 10 
+Number("10.33"); <-- returns 10.33
+Number("10,33"); <-- returns NaN (returns NaN because the number cannot be converted)
+Number("10 33"); <-- returns NaN
+Number("John");  <-- returns NaN
+
+parseInt() method
+
+parses a string and returns a number, spaces are allowed and only the first number is returned:
+
+parseFloat("10");        <-- returns 10
+parseFloat("10.33");     <-- returns 10.33
+parseFloat("10 20 30");  <-- returns 10
+parseFloat("10 years");  <-- returns 10
+parseFloat("years 10");  <-- returns NaN  (returns NaN as number cannot be converted) 
+
+Number Properties
+
+Property                 Description
+
+MAX_VALUE                Returns the largest possible number in JavaScript
+MIN_VALUE                Returns the smallest number possible in JavaScript
+POSITIVE_INFINITY        Represents infinity (returned on overflow)
+NEGATIVE_INFINITY        Represents negative infinity (returned on overflow)
+NaN                      Represents a "Not-a-Number" value
+
+Property                Example
+
+MAX_VALUE               var x = Number.MAX_VALUE;
+MIN_VALUE               var x = Number.MIN_VALUE;
+POSITIVE_INFINITY       var x = Number.POSITIVE_INFINITY; (var x = 1 / 0);
+NEGATIVE_INFINITY       var x = Number.NEGATIVE_INFINITY; (var x = -1 / 0);
+NaN                     var x = Number.NaN (var x = 100 / "Apple");
+
+Number properties cannot be used on variables, as the belong to JavaScript's number object wrapper
+(called Number).  These properties can only be accessed as Number.MAX_VALUE (6.MAX_VALUE).  If you try
+to use myNumber.MAX_VALUE where myNumber is a variable, expression or value, it will return undefined:
+
+<p id="demo"></p>
+
+<script>
+    var x = 6;
+    document.getElementById("demo").innerHTML = x.MAX_VALUE;
+</script>
+
+the above returns undefined as the result. 
+  */
