@@ -174,6 +174,35 @@ Operator        Description
 <=              less than or equal to
 ?               ternary operator
 
+the ternary operator is the only JavaScript operator that takes three operads:
+
+a condition followed by a question mark, then an expression to execute if the condition is true
+followed by a colon and finally the expression to execute if the condition is false.  The ternary
+operator is often used as a shortcut for the if statement. 
+
+function getFEE(isMember){
+        return (isMember ? '$2.00' : '$10.00');
+}
+
+a common usage of the ternary operator is to handle a null value
+
+let greeting = person => {
+        let name = person ? person.name : `stranger`
+        return `Howdy, ${name}`
+}
+
+console.log(greeting({name: `Alice`})); <-- "Howdy, Alice"
+console.log(greeting(null)); <-- "Howdy, stranger"
+
+The ternary operator is right-associative which means it can be chained similar to an if else chain:
+
+if ... else
+if ... else
+if ... else
+
+
+
+
 */
 
 /* 
