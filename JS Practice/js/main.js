@@ -943,7 +943,7 @@ POSITIVE_INFINITY       var x = Number.POSITIVE_INFINITY; (var x = 1 / 0);
 NEGATIVE_INFINITY       var x = Number.NEGATIVE_INFINITY; (var x = -1 / 0);
 NaN                     var x = Number.NaN (var x = 100 / "Apple");
 
-Number properties cannot be used on variables, as the belong to JavaScript's number object wrapper
+Number properties cannot be used on variables, as they belong to JavaScript's number object wrapper
 (called Number).  These properties can only be accessed as Number.MAX_VALUE (6.MAX_VALUE).  If you try
 to use myNumber.MAX_VALUE where myNumber is a variable, expression or value, it will return undefined:
 
@@ -956,3 +956,165 @@ to use myNumber.MAX_VALUE where myNumber is a variable, expression or value, it 
 
 the above returns undefined as the result. 
   */
+
+/* 
+  
+**************************************** ----- Arrays ----- ****************************************
+  
+Arrays store multiple values inside of a single variable
+
+var cars = ["Saab", "Volvo", "BMW"];
+
+This is useful if you want to loop through multiple values, 300 cars instead of 3 for example. Each 
+value can be accessed by its index number which is assigned to a value by where it is entered into an
+array.
+
+e.g.
+
+var cars = ["Saab", "Volvo", "BMW"]; (Saab would have an index of 0, Volvo and index of 1 and soforth.)
+
+Creating an array can be done two different ways in JavaScript.  The easier and more commonly used method
+is to create an array literal. 
+
+var array = ["value1", "value2", ...];
+
+you may also uses spaces or line breaks, a declaration can span multiple lines.
+
+var array = [
+        "value1",
+        "value2",
+        "value3"
+];
+
+You can also create an array by using the JavaScript keyword new
+
+var cars = new Array("Saab", "Volvo", "BMW");
+
+however it is generally preferred to use the array literal method. 
+
+as stated previously, values or "array elements" can be accessed using numeric indexes (starting from 0).
+
+<p id="demo"></p>
+
+<script>
+    var cars = ["Saab", "Volvo", "BMW"];
+    cars[0] = "Opel";   <-- changes Saab into Opel 
+    document.getElementById('demo').innerHTML = cars; <-- using the full array name accesses the entire array.
+</script>
+
+Although best described as arrays, Javascript returns "object" for arrays when using the typeof operator. 
+
+This is important because you can have different types of variables in an array, objects, functions, other arrays
+primitive data types etc. 
+
+The length property returns the number of array elements in an array and is always one higher then the highest
+array index
+
+<p>The length property returns the length of an array.</p>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.length;
+</script>
+
+The above result would equal 4 array elements even though "Mango" would be positioned as index 3.  
+
+Array's always start at 0 in javascript which is important when knowing which element you wish to
+access.  
+
+going back to the fruits array demo, to access "Banana" you would use:
+
+var x = fruits[0];
+
+To access the last element in an array you would use:
+
+var x = fruits[length - 1];
+
+to loop through an array it is recommended to use a for loop
+
+<p id="demo"></p>
+
+<script>
+
+    let fruits, text, fLen, i;
+
+    fruits = ["Banana", "Orange", "Apple", "MAngo"];
+    fLen = fruits.length;
+
+    text = "<ul>";
+
+    for (i = 0; i < fLen; i++) {
+        text + "<li>" + fruits[i] + "</li>"
+    }
+    text += "</ul>";
+
+    document.getElementById("demo").innerHTML = text;
+</script>
+
+you can also use the Array.forEach() function:
+
+<p>Array.forEach() calls a function for each array element.</p>
+
+<p>Array.forEach() is not supported in Internet Explorer 8 or earlier.</p>
+
+<p id="demo"></p>
+
+<script>
+var fruits, text;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+document.getElementById("demo").innerHTML = text;
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+} 
+</script>
+
+To add a new array element, it is easiest to use the push() method:
+
+var fruits["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Lemon");  <-- Adds the new element (Lemon) to the fruits array.
+
+Elements may also be added using the length property:
+
+var fruits["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Lemon"; 
+
+Associative Arrays are arrays with named indexes, this is not supported in Javascript. 
+In Javascript, arrays always use numbered indexes:
+
+<p id="demo"></p>
+
+<script>
+var person = [];
+person[0] = "John";
+person[1] = "Doe";
+person[2] = 46; 
+document.getElementById("demo").innerHTML =
+person[0] + " " + person.length; <-- person[0] will return "John" and person.length will return 3
+</script>
+
+If you try to use an associative array, it will return incorrect results.  To use named indexes you
+should always use an object.  
+
+To tell if an object is an array you could use the isArray() function which was released with ES5 however
+to test for an array in older browsers you need to write a function:
+
+function isArray(x) {
+  return x.constructor.toString().indexOf("Array") > -1;
+}
+
+this function will always return true if the object prototype contains the word "Array"
+
+you may also use the instanceof operator which returns true if an object is created by a give constructor:
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+fruits instanceof Array;  <-- will return true
+
+*/
