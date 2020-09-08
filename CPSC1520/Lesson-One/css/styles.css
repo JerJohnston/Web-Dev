@@ -1,0 +1,17 @@
+//CSS Tricks Flexbox
+//Wes Bos flexbox and grid
+
+.site-nav{
+    box-shadow: 0 0 5px 0 grey;
+    padding: 0.5rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    font-size: 1.5rem;
+}
+    
