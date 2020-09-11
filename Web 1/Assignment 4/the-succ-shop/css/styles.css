@@ -1,0 +1,551 @@
+body {
+	background-color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+ 
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/** Begin Nav Styling **/
+
+nav{
+	background: #533b4d;
+	color: #fff;
+}
+
+nav > div > a > img{
+	margin:12px 12px 6px 12px;
+}
+
+nav > p{
+	font-weight: 200;
+	font-size: 24px;
+	margin-top: 30px;
+	
+}
+nav > ul{
+	margin: 30px 20px 10px 480px;
+}
+
+nav > ul > li > a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 200;
+	margin: 20px;
+	transition: border 1s ease-in;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+/** Begin Banner Styling **/
+
+main a:hover{	
+		text-decoration: underline;
+	}
+
+
+h1{
+	font-size: 60px;
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+	padding-bottom: 25px;
+}
+
+.banner{
+	background: url(../img/cactus-banner.jpg);
+	
+}
+
+.banner-text{
+	line-height: 1.15;
+	padding: 90px 0px 150px 50px;
+	width:440px;
+}
+	
+.banner-text p{
+	font-size: 30px;
+	font-weight: 200;
+	color: #fff;
+	padding-bottom: 55px;
+	margin-right: 50px;
+}
+
+.banner a{
+	background-color: #533b4d;
+	color: #fff;
+	font-size: 36px;
+	font-weight: 200;
+	text-decoration: none;
+	padding: 15px 30px;
+	border-radius: 10px;
+}
+
+.banner-text a:hover{
+	text-decoration: underline;
+	text-underline-position: below;
+}
+
+/** Begin About Us Section Styling **/
+
+h2{
+	font-size: 72px;
+	font-family: 'Playfair Display', serif;
+	color: #1d0502;
+	margin-top: 100px;
+	padding-left: 135px;
+}
+
+.row-1-col-1{
+	margin: 150px 20px 0 20px;
+	width: 380px;
+}
+
+.row-1-col-2 > p{
+	font-size: 17px;
+	font-weight: 400;
+	color: #1d0502;
+	line-height: 1.15;
+	margin: 15px;
+	padding: 0;
+	width: 502px;
+}
+
+sub{
+	font-size: 14px;
+	padding-left: 15px;
+	padding-top: 20px;
+	display: inline-block;
+}
+
+/** Begin Cactus Care Guide Styling **/
+
+/** Banner **/ 
+
+.care-banner{
+	margin-top: 130px;
+	color: #fff;
+}
+
+.care-banner h2{
+	margin: -165px 0 -150px 125px;
+}
+
+h2 span{
+	font-size: 48px;
+	background-color: #fff;
+}
+
+/** Care Articles **/
+
+h3{
+	font-size: 36px;
+	font-family: 'Playfair Display', serif;
+	margin: 45px;
+}
+
+.care-section{
+	padding-top: 240px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.15;
+
+}
+
+
+.row-2-col-1, .row-2-col-2, .row-3-col-2{
+	background-color: #9b4037;
+	width: 480px;
+	height: 500px;
+}
+
+.row-2-col-1 p, .row-3-col-2 p{
+	font-size: 16px;
+	margin: 0 45px 30px 45px;
+	padding: 0;
+}
+
+.care-section a{
+	color: #fff;
+	font-size: 24px;
+	text-decoration: none;
+	margin-left: 45px;
+	margin-top: 30px;
+	display: inline-block;
+	
+}
+
+.bar{
+	width: 880px;
+	height: 1px;
+	border-bottom: 1px solid black;
+	margin: 82.5px 40px;
+}
+
+/** End of Main Section **/
+
+/** Footer Styling **/
+
+footer{
+	font-weight: 300;
+	line-height: 1.15;
+}
+
+.Logo{
+	margin-left: 440px;
+}
+
+.Logo p{
+	margin-left: -28px;
+	color: #19211f;
+	font-size: 24px;
+}
+
+.flex{
+	display: flex;
+}
+
+h4{
+	font-size: 24px;
+	font-weight: 500;
+	margin: 60px 0 0 120px;
+}
+
+.about-nav h4{
+	margin-left: 85px;
+}
+
+.footer-nav{
+	background-color: #fff;
+	display: inline-block;
+	
+}
+
+.footer-nav ul{
+	text-align: center;
+	display: inline-block;
+	margin-left: 20px;
+}
+.footer-nav a{
+	color: #19211f;
+	font-size: 24px;
+	
+}
+
+.about-nav{
+	margin-left: 60px;
+}
+
+.contact-info{
+	width: 280px;
+	text-align: center;
+	display: inline-block;
+}
+
+.contact-info h4{
+	margin-right: 35px;
+}
+
+.contact-info p{
+	color: #19211f;
+	font-size: 24px;	
+	margin: 35px 0 0 80px;	
+}
+
+.copy{
+	margin:100px 0 30px 400px;
+}
+
+footer p{
+	margin: 0 0 40px 30px;
+}
+
+/** SHOP PAGE **/
+
+/** Breadcrumb Nav **/
+
+.breadcrumb{
+	display: flex;
+	margin-top: 25px;
+	margin-bottom: -105px;
+}
+
+.breadcrumb li{
+	margin-left: 15px;
+}
+.breadcrumb a{
+	text-decoration: none;
+	color: #19211f;
+}
+
+/** Cute Cacti Section Styling **/
+
+.cute-cacti{
+	margin-top: 130px;
+	margin-bottom: 120px;
+	color: #fff;
+}
+
+
+.cute-cacti h2{
+	margin: -165px 0 -150px 235px;
+}
+
+h2 span{
+	padding:0 10px;
+}
+
+section .cacti-text p{
+	padding: 120px 0 40px 0;
+}
+
+.item{
+	margin-bottom: 40px;
+	
+}
+
+.item:nth-child(even){
+	margin-left: 15px;
+}
+
+.item:nth-child(3){
+	margin-left: 15px;
+}
+
+.item:nth-child(7){
+	margin-left: 15px;
+}
+
+.item p{
+	text-align: center;
+}
+
+.money{
+	font-weight: bold;
+}
+
+/** Soft Succulents Section Styling **/
+
+.succulent{
+	margin-top: 130px;
+	margin-bottom: 120px;
+	color: #fff;
+}
+.succulent h2{
+	margin: -165px 0 -150px 190px;
+}
+
+/** Cart Page Styling **/
+
+.checkout{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 140px;
+	padding-left: 30px;
+	
+}
+
+.checkout .quantity{
+	padding-right: 80px;
+	text-align: center;	
+}
+
+.checkout a{
+	color: #19211f;
+	font-weight: 300;
+}
+
+
+.description{
+	margin-left: 45px;
+	font-weight: 300;
+}
+
+.checkout ul{
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+
+.checkout p{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.cart-money{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: right;
+	padding-left: 170px;
+}
+
+.remove{
+	text-align: center;
+	padding-left: 65px;
+}
+
+.checkout .moon-quantity{
+	padding-right: 65px;
+	text-align: center;	
+
+}
+
+.shopping{
+	margin-left: 310px;
+	text-align: center;
+}
+
+.shopping p{
+	margin-bottom: 60px;
+}
+
+.shopping a{
+	background-color: #9b4037;
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 15px 70px;
+	border-radius: 10px;
+}
+/**  Form Styling **/
+
+/** Form Header **/
+
+.form-header h1{
+	font-size: 60px;
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	color: #19211f;
+	margin-top: 100px;
+}
+
+/** Form Backgrounds and body styling **/
+form{
+	background-color: #9b4037;
+	width: 480px;
+	color: #fff;
+}
+
+.register{
+	background-color: #fff;
+	color: #533b4d;
+	border: solid 1px #533b4d;
+	width: 478px;
+}
+
+form h3{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+form p{
+	margin: 0 100px 45px 45px;
+}
+
+/** LOG IN FORM (LEFT) **/
+label{
+
+	margin-left: 45px;
+}
+
+input{
+	margin-left: 45px;
+	margin-bottom: 30px;
+	line-height: 40px;
+	width: 388px;
+	border: solid 1px black;
+}
+
+.remember-me{
+	margin-left: -140px;
+	margin-right: -220px;
+	margin-bottom: 150px;
+}
+
+input[type=submit]{
+	font-size: 21px;
+	font-weight: 300;
+	background-color: #533b4d;
+	color: #fff;
+	width: 230px;
+	border: none;
+	border-radius: 8px;
+	margin-bottom: 60px;
+}
+
+/** REGISTER FORM (RIGHT) **/
+
+input[id="name"]{
+	width: 180px;
+}
+
+input[id="name2"]{
+	width: 180px;
+	margin-left: 25px;
+}
+
+label[for="name"]{
+	display: block;
+}
+
+label[for="name2"]{
+	display: block;
+	margin-left: 25px;
+}
+
+input[id="password-reg"]{
+	width: 180px;
+}
+
+input[id="password2"]{
+	width: 180px;
+	margin-left: 25px;
+}
+
+label[for="password-reg"]{
+	display: block;
+}
+
+label[for="password2"]{
+	display: block;
+	margin-left: 25px;
+}
+
+.guest-checkout{
+	margin-top: 50px;
+	text-align: center;
+}
+
+.terms{
+	margin-left: -140px;
+	margin-right: -220px;
+	margin-bottom: 50px;
+}
+
+form a{
+color: #a14c44;
+}
+
+.guest-check{
+	color: #a14c44;
+	font-size: 18px;
+	display: inline-block;
+	padding-top: 15px;
+}
+
+
+
+
+
+
+

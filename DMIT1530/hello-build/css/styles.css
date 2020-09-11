@@ -1,0 +1,31 @@
+body {
+    background-color: #edf2f7;
+    font-size: 100%; /* Default browser font-size*/
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #68778d;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #fff;
+}
+
+h1{
+    color: #63b3ed;
+    font-size: 125px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.callout p {
+    color: #8594ad;
+    font-size: 32px;
+    font-weight: bold;
+}

@@ -1,0 +1,11 @@
+[0909/155217.671:ERROR:backend_impl.cc(1062)] Critical error found -8
+[0909/155217.672:WARNING:storage_block-inl.h(131)] Failed data load.
+[0909/155217.672:ERROR:entry_impl.cc(985)] Failed to save user data
+[0909/155217.761:WARNING:angle_platform_impl.cc(52)] compileToBinary(230): 
+C:\fakepath(77,10-42): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(99,10-42): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+
+[0909/155429.658:WARNING:angle_platform_impl.cc(52)] compileToBinary(230): 
+C:\fakepath(69,8-58): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+C:\fakepath(77,9-43): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
+

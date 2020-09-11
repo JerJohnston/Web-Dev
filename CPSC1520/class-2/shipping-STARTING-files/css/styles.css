@@ -1,0 +1,86 @@
+/*
+ Fonts
+ - system ui font stack
+*/
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+/*
+
+  SITE NAVITGATION
+
+*/
+
+.site-nav{
+    box-shadow: 0 0 5px 0 grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 1rem;
+}
+
+.site-nav img{
+    width: 2rem;
+}
+  /*
+    SHIPPING CALCULATOR
+  */
+
+  .shipping-calculator{
+      width: 320px;
+      margin: 4rem auto;
+  }
+
+  .shipping-calculator div{
+      text-align: center;
+      margin-bottom: 3rem;
+  }
+
+  .shipping-calculator div img{
+      width: 8rem;
+  }
+
+  .shipping-calculator div h2{
+      font-size: 2rem;
+      font-weight: 700;
+      color: rgb(35,37,44)
+  }
+
+  .shipping-calculator div p{
+      font-size: 1rem;
+      font-weight: 700;
+      color: rgb(142,133,132)
+  }
+
+  .control{
+    justify-content: center;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+
+  .control label,
+  .control input{
+      display: block;
+      font-size: 1rem;
+      padding: 0.5rem 0.9rem;
+  }
+
+  .control label{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background: rgb(91,71,255);
+    color: #fff;
+  }
+
+  .control input{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: none;
+    background: rgb(222,222,222);
+    padding-top: 0.9rem;
+  }

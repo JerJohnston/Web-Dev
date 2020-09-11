@@ -1,0 +1,195 @@
+/* Created by http://freehtml5templates.com */
+
+/* reset */
+* {
+margin: 0;
+padding: 0;
+}
+
+/* render html5 elements as block */
+header, footer, section, aside, nav, article {
+display: block;
+}
+
+body {
+line-height: 1;
+background: #c1d6cc url(images/geek_cakes_background.jpg) fixed bottom center repeat-x;
+font-family: 'Montserrat', sans-serif;
+color: #666;
+font-size: 15px;
+line-height: 20px;
+}
+	
+/* layout */
+
+#wrapper {
+width: 940px;
+margin: 0 auto;
+margin-top: 20px;
+}
+
+nav {
+width: 940px;
+height: 52px;
+margin: 0 auto;
+background: #009898;
+}
+
+header {
+width: 940px;
+height: 200px;
+margin: 0 auto;
+background: #fff url(images/headerimg.jpg) no-repeat left top;
+}
+
+#main {
+width: 940px;
+margin: 0 auto;
+padding-top: 20px;
+background: #FFF;
+overflow: hidden;
+}
+
+#content {
+float: left;
+width: 660px;
+margin: 10px 30px 10px 30px;
+}
+
+#sidebar {
+float: left;
+padding-left: 20px;
+width: 200px;
+}
+
+footer {
+width: 900px;
+margin: 0 auto;
+padding: 20px;
+clear: both;
+background: #3b3235;
+color: #ffebdc;
+font-size: 13px;
+text-align: center;
+}
+
+/* basics */
+
+h1,h2,h3,h4,h5,h6 {
+font-weight: normal;
+clear: both;
+color: #da92aa;
+}
+
+a:link, a:visited {
+color:#009898;
+text-decoration: none;
+}
+
+a:hover, a:active {
+color: #009898;
+text-decoration: underline;
+}
+
+p {
+margin-bottom: 18px;
+}
+
+li {
+padding-left: 5px;
+}
+
+/* nav */
+
+nav .menu {
+font-size: 12px;
+font-weight: normal;
+}
+
+nav .menu ul {
+margin: 0;
+padding: 17px 0 0 20px;
+list-style: none;
+line-height: normal;
+}
+
+nav .menu li {
+display: block;
+float: left;
+}
+
+nav .menu a {
+display: block;
+float: left;
+margin-right: 5px;
+padding: 0px 17px;
+text-decoration: none;
+color: #fff;
+}
+
+nav .menu a:hover {
+text-decoration: underline;
+}
+
+/** HEADER */
+
+/** ARTICLES **/
+
+article {
+margin: 0;
+}
+
+article img {
+border: none;
+}
+
+#content p, ul, ol, hr {
+margin-bottom: 24px;
+}
+
+#content ul ul, ol ol, ul ol, ol ul {
+margin-bottom: 0;
+}
+
+#content h1, h2, h3, h4, h5, h6 {
+color: #da92aa;
+margin: 0 0 20px 0;
+line-height: 1.5em;
+font-family: 'Bangers', cursive;
+letter-spacing: 1px;
+}
+
+#content h1 {
+	font-size: 30px;	
+}
+
+#content .smallbutton {
+	float: left;
+	margin-right: 45px;
+	margin-bottom: 24px;
+}
+
+#content .smallbuttonlast {
+	float: left;
+	margin-right: 0;
+	margin-bottom: 24px;
+}
+/* sidebar and footer widget blocks */
+
+.asidebox {
+width: 160px;
+background: #ffebdc;
+padding: 20px;
+margin-bottom: 30px;
+font-size: 13px;
+}
+
+aside h3 {
+font-size: 22px;
+margin-bottom: 20px;
+color: #da92aa;
+}
+
+
+
+

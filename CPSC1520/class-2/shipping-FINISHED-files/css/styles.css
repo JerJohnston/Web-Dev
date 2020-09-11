@@ -1,0 +1,125 @@
+/* base styles for font */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 1.25rem;
+}
+ 
+/* 
+ *
+************************    PAGE BANNER STYLES      ************************ 
+ *
+*/
+.banner {
+  box-shadow: 0 0 2px 2px rgb(216, 215, 215);
+  padding: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner img:nth-child(1) {
+  width: 3rem;
+}
+ 
+
+.banner h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.banner button {
+
+ 
+  font-size: 1rem;
+ background:none;
+ border:none;
+ 
+  color:  #000;;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* 
+ *
+************************    SHIPPING CALCULATOR      ************************ 
+ *
+*/
+.shipping-calculator{
+    display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin: 4rem 1rem;
+ 
+}
+.shipping-calculator header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.shipping-calculator header img{
+    width:  15vw;
+    max-width: 120px;
+   
+}
+
+.shipping-calculator header h2{
+    font-size: calc(16px + 3vw);
+    line-height:1;
+    font-weight: 700;
+}
+
+.shipping-calculator header p{
+    font-size: calc(12px + 1vw);
+   color:grey;
+}
+
+.calculator{
+ 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    max-width: 420px;;
+}
+.calculator label, .calculator input{
+   padding: 0.5rem 1rem;
+   font-size: 1rem;
+   line-height: 1.5;
+    
+}
+
+.calculator label{
+    background:#4c63e4;;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+ 
+}
+ ::placeholder{
+    color:rgb(140, 130, 130);
+   
+}
+.calculator input{
+    outline:none;
+    width:100%;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+     border:none;
+     box-shadow: 0 0 3px  0 rgba(0,0,0,0.25) inset;
+    border-left:none;
+}
+ 
+input:focus{
+    background-color: rgb(237, 237, 237);
+    box-shadow:none;
+}
+ 
