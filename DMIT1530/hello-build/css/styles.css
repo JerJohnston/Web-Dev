@@ -11,6 +11,10 @@ body {
     margin: 0 auto;
 }
 
+/*
+HEADER STYLING
+*/
+
 header {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -24,8 +28,82 @@ h1{
     text-align: center;
 }
 
+/* 
+CALLOUT STYLING
+*/
+
+.callout{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 72px;
+}
 .callout p {
     color: #8594ad;
     font-size: 32px;
     font-weight: bold;
+}
+
+.callout span {
+    color: #63b3ed;
+}
+
+.callout a {
+    background-color: #dd6b20;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #dd6b20;
+    padding: 6px;
+    margin-left: 20px;
+    
+} 
+
+.callout a:hover,
+.callout a:focus
+ {
+    background-color: #fff;  
+    border: 2px solid #dd6b20;
+    color: #8594ad;
+}
+
+/*
+    MAIN CONTENT STYLING
+*/
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col img{
+    margin-bottom: 36px;
+}
+
+.col {
+   /*width: 300px;*/
+   /* note: the images are the widest element in each column, therefore the columns will equal the width of the images. Therefore we do not need to specify the width as Flexbox looks at the width of the content first and then lays out the space*/
+   margin-bottom: 36px;
+   padding-bottom: 36px;
+   background-color: #fff;
+   font-size: 18px;
+   text-align: center;
+}
+
+.col h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.col li {
+    line-height: 2;
+}
+
+/*
+    FOOTER STYLING
+*/
+
+footer {
+    background-color: #fff;
+    font-style: italic;
+    padding: 15px 30px;
 }

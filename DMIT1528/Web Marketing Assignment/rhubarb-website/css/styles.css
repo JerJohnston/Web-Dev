@@ -1,5 +1,5 @@
 .container{
-    width: 80vw;
+    width: 60em;
     margin: 0 auto;
 }
 
@@ -7,6 +7,8 @@
 
 .site-nav{
     background-color: #a65601;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
 }
 
 .site-nav ul{
@@ -16,4 +18,19 @@
 .site-nav img{
     width: 4rem;
     padding-left: 0.75rem;
+
+}
+
+.site-nav li:nth-child(1){
+    margin-right: auto;
+}
+
+.site-nav li{
+    
+}
+
+.site-nav a{
+    text-decoration: none;
+    color: #f9d4ac;
+    font-size: 1.45rem;  
 }
