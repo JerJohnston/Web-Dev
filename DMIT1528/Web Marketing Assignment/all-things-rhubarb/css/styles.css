@@ -1,0 +1,237 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Mrs Sheppards', cursive; */
+
+body {   
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 60em;
+    margin: 0 auto;
+}
+
+
+/* Nav Bar Styling */
+
+.navbar {
+    background-color: #000;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#nav-logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top,#e95354 0%, #be142f 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.fa-seedling {
+    margin-right: 0.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-item{
+    height: 80px;
+}
+
+.nav-links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.1rem;
+    height: 100%;
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, #e95354 0%, #be142f 100%);
+    color: #fff;
+}
+
+.button:hover {
+    color: #4837ff;
+    transition: all 0.3s ease;
+}
+
+.nav-links:hover {
+    color: #f77062;
+    transition: all 0.3s ease;
+}
+
+/* HEADER CONTENT STYLING */
+
+header {
+    background-image: url(../img/rhubarb-hero.jpg);
+    background-size: cover; 
+    height:30em;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Mrs Sheppards', cursive;
+    font-size: 6.3em;
+    text-align: center;
+    word-spacing: 0.2em;
+    padding: 1.4em 0;
+}
+
+/* MAIN CONTENT STYLING */
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-between;
+}
+
+
+.col {
+    width: 12em;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+/* RESPONSIVE NAVBAR STYLING */
+
+@media screen and (max-width: 960px) {
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .nav-menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+    }
+
+    .nav-menu.active {
+        background-color: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+
+    #nav-logo {
+        padding-left: 25px;
+    }
+
+    .nav-toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;  
+        transition: all 0.3s ease-in-out;  
+        background-color: #fff;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .nav-btn {
+        padding-bottom: 2rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+
+    .nav-toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
